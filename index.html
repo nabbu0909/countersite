@@ -1,1 +1,21 @@
-<h1>Count:</h1>
+<!DOCTYPE html>
+<html>
+<body>
+
+    <h1>Count: </h1>
+    <h1 id="counter"></h1>
+
+    <script>
+        var count=0;
+        document.getElementById("counter").innerHTML = count; 
+
+        function increment(){
+            count++;
+            document.getElementById("counter").innerHTML = count;
+        }
+    </script>
+
+    <button type="button" onclick="increment()">Increment</button>
+
+</body>
+</html>
